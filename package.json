@@ -1,0 +1,32 @@
+{
+  "name": "fetest",
+  "version": "1.0.0",
+  "description": "node packages for fetest theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tesliker/fetest-theme.git"
+  },
+  "keywords": [
+    "drupal8",
+    "custom",
+    "theme",
+    "npm",
+    "gulp"
+  ],
+  "author": "tesliker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tesliker/fetest-theme/issues"
+  },
+  "homepage": "https://github.com/tesliker/fetest-theme#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.16.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

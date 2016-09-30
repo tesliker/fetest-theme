@@ -1,0 +1,82 @@
+// import SASS files
+@import '../preprocess/variables';
+@import '../preprocess/mixins';
+@import '../article/article';
+
+// import web fonts
+@import 'https://fonts.googleapis.com/css?family=Fira+Sans';
+
+html {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: $secondary;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+  }
+  &:visited {
+    color: $secondary;
+  }
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.site-branding--name {
+  text-decoration: none;
+}
+
+#block-fetest-branding {
+  > h2,
+  > a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+header nav {
+  @include linear-gradient($primary, darken($primary, 10%));
+  a {
+    color: $white;
+    text-decoration: none;
+    text-shadow: 0px 1px 2px $primary;
+    padding: .8rem;
+    display: block;
+    &:hover {
+      background-color: rgba(256,256,256,.3);
+      color: $white;
+    }
+    &:visited {
+      color: $white;
+    }
+  }
+  ul {
+    margin: 0;
+    clear: both;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+button {
+  padding: 1rem;
+  @include linear-gradient($primary, darken($primary, 10%));
+  color: $white;
+  font-size: 1.2em;
+  border: medium none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+}
+
+#block-fetest-branding {
+  @media (max-width: 400px) {
+    text-align: center;
+  }
+}

@@ -1,0 +1,13 @@
+name: FE Test
+type: theme
+description: This is a FE Test sub theme of Classy
+core: 8.x
+libraries:
+  - fetest/global
+regions:
+  header: Header
+  featured: Featured
+  content: Content
+  sidebar_first: First sidebar
+  sidebar_second: Second sidebar
+  footer: Footer

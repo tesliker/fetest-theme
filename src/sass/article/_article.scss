@@ -1,0 +1,39 @@
+.hero-wrapper {
+  overflow: hidden;
+  position: relative;
+  h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 10px;
+    @include linear-gradient($secondary, darken($secondary, 10%));
+    margin: 0;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  @media (min-width: 768px) {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    img {
+      width: 900px;
+      height: auto;
+    }
+  }
+}
+
+.field--name-field-subtitle {
+  @include linear-gradient(to right, $primary, $secondary);
+  color: $white;
+  font-size: 24px;
+  padding: 1rem;
+}
+
+.field--name-field-image {
+  line-height: 0;
+}
